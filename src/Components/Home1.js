@@ -1,29 +1,3 @@
-// import React, {useEffect, useState} from 'react';
-// import Form from '../Components/Form'
-// import List from '../Components/List'
-// import { get } from 'jquery';
-
-// const Home1 = () => {
-
-//     const [todos, setodos] = useState([]);
-
-//     useEffect(() => {
-//         getTodos();
-//     }, [])
-    
-//     async const getTodos = () => {
-        
-//     }
-
-//     return (
-//         <div>
-//         </div>
-//     )
-// }
-
-// export default Home1;
-
-  
 import React, { useEffect, useState} from 'react';
 import Form  from './Form'
 import List from './List'
