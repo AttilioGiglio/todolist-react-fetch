@@ -1,34 +1,23 @@
-import React, {Component} from 'react';
+import React, { } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery';
+import 'popper.js';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home0 from '../Components/Home0';
+import Home1 from '../Components/Home1'
 
-class App extends Component {
-  constructor(){
-    super();
-    this.state={
-      hello:[
-        'state1', 'state2'
-      ]
-    }
+const App = () => {
+  return(
+    <Router>
+      <Switch>
+        <Route path='/'component={Home0} exact/>
+        <Route path='/home1'component={Home1}/>
+      </Switch>
+    </Router>
+       
+ 
+      )
   }
-
-  componentDidMount(){
-    this.setState(
-        {hello:['setState1','setState2']}
-        )
-  }
-
-  componentDidUpdate(){
-    const json = JSON.stringify(this.state.hello)
-    localStorage.setItem('hello', json);
-  }
-
-  render(){
-  return (
-    <div className="App">
-        <h1>{this.state.hello}</h1>
-     </div>
-  );
-}
-}
 
 export default App;
