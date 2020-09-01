@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery';
 import 'popper.js';
 import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home0 from '../Components/Home0';
+import Home0 from '../Components/LinkButton';
 import Home1 from '../Components/Home1'
 
 const App = () => {

@@ -1,23 +1,7 @@
-// import React from 'react';
-
-
-// const Form = () => {
-
-//     return (
-//         <div>
-            
-//         </div>
-//     )
-// }
-
-// export default Form;
-
-
 import React, {useState} from 'react'
 import { v4 as uuid } from "uuid";
 
 const TodoForm = ({addTodo}) => {
-
     const [todo, setTodo] = useState(
         {
             id:"",
@@ -28,7 +12,7 @@ const TodoForm = ({addTodo}) => {
     function handleTaskInputChange(e){
         setTodo({
             ...todo,
-            label:e.target.value
+            label:e.target.value, done:false
         });
     }
 
